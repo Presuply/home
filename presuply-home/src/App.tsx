@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { ScrollTrigger } from './lib/gsap'
 import { HomePage } from './pages/HomePage'
+import { HomeSequencePage } from './pages/HomeSequencePage'
 import { ImageSequencePage } from './pages/ImageSequencePage'
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/home-seq" element={<HomeSequencePage />} />
       <Route path="/image-sequence" element={<ImageSequencePage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
