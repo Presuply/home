@@ -69,7 +69,7 @@ export function FinalCTA() {
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink href="#precios" variant="primary">
+            <ButtonLink href="https://app.presuply.app/pricing" variant="primary">
               Empezar ahora gratis <span className="text-white/80">→</span>
             </ButtonLink>
             <ButtonLink

@@ -227,7 +227,7 @@ export function DownloadAppSection() {
   }, [])
 
   return (
-    <section id="descarga" ref={rootRef} className="pt-14 pb-40 md:pt-20 md:pb-56">
+    <section id="descarga" ref={rootRef} className="overflow-x-hidden pt-14 pb-40 md:pt-20 md:pb-56">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 md:grid-cols-12 md:gap-8 md:px-6">
         <div data-download-left className="md:col-span-5">
           <div className="inline-flex items-center gap-2 rounded-full border border-orange-500/35 bg-orange-500/10 px-3 py-1 text-[11px] font-extrabold text-orange-700">

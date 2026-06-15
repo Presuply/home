@@ -183,7 +183,7 @@ export function PricingSection() {
 
                 <div className="mt-8">
                   <ButtonLink
-                    href="#"
+                    href="https://app.presuply.app/pricing"
                     variant={p.popular ? 'primary' : 'secondary'}
                     className="w-full"
                   >

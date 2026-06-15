@@ -77,26 +77,50 @@ export function AppShowcaseSection() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray<HTMLElement>('[data-mock]')
-      cards.forEach((el, i) => {
-        gsap.to(el, {
-          y: (i % 2 === 0 ? -1 : 1) * (24 + i * 6),
-          ease: 'none',
-          scrollTrigger: {
-            trigger: rootRef.current,
-            start: 'top bottom',
-            end: 'bottom top',
-            scrub: true,
-          },
+      const mm = gsap.matchMedia()
+
+      mm.add('(min-width: 768px)', () => {
+        const cards = gsap.utils.toArray<HTMLElement>('[data-mock]')
+        cards.forEach((el, i) => {
+          gsap.to(el, {
+            y: (i % 2 === 0 ? -1 : 1) * (24 + i * 6),
+            ease: 'none',
+            scrollTrigger: {
+              trigger: rootRef.current,
+              start: 'top bottom',
+              end: 'bottom top',
+              scrub: true,
+            },
+          })
         })
       })
+
+      mm.add('(max-width: 767px)', () => {
+        gsap.fromTo(
+          '[data-mock]',
+          { y: 18, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: 'power3.out',
+            stagger: 0.08,
+            scrollTrigger: {
+              trigger: rootRef.current,
+              start: 'top 75%',
+            },
+          },
+        )
+      })
+
+      return () => mm.revert()
     }, rootRef)
 
     return () => ctx.revert()
   }, [])
 
   return (
-    <section ref={rootRef} className="py-14 md:py-20">
+    <section ref={rootRef} className="overflow-x-hidden py-14 md:py-20">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-10 px-4 md:grid-cols-12 md:gap-8 md:px-6">
         <div className="md:col-span-5">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight text-navy-900 sm:text-4xl">
@@ -114,14 +138,14 @@ export function AppShowcaseSection() {
           </ul>
 
           <div className="mt-8">
-            <ButtonLink href="#precios" variant="primary">
+            <ButtonLink href="https://app.presuply.app/pricing" variant="primary">
               Ver todas las funciones <span className="text-white/80">→</span>
             </ButtonLink>
           </div>
         </div>
 
         <div className="relative md:col-span-7">
-          <div className="relative mx-auto h-[560px] max-w-[520px]">
+          <div className="relative mx-auto h-[660px] max-w-[520px] md:h-[560px]">
             <div className="pointer-events-none absolute inset-0">
               <div className="absolute -left-12 top-10 h-52 w-52 rounded-full bg-orange-500/10 blur-3xl" />
               <div className="absolute -right-14 bottom-6 h-64 w-64 rounded-full bg-navy-900/10 blur-3xl" />
@@ -150,4 +174,3 @@ export function AppShowcaseSection() {
     </section>
   )
 }
-

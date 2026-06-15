@@ -21,6 +21,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  min-height: 100%;
+  overflow-x: clip;
+}
+
 ::selection {
   background: rgba(255, 90, 0, 0.18);
 }

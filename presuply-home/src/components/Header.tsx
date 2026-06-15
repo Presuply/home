@@ -4,7 +4,7 @@ import { ButtonLink } from './ui/ButtonLink'
 
 const nav = [
   { label: 'Funciones', href: '#funciones' },
-  { label: 'Precios', href: '#precios' },
+  { label: 'Precios', href: 'https://app.presuply.app/pricing' },
   { label: 'Blog', href: '#blog' },
   { label: 'Contacto', href: '#contacto' },
 ]
@@ -48,13 +48,13 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <ButtonLink
-            href="#"
+            href="https://app.presuply.app/login"
             variant="ghost"
             className="hidden md:inline-flex"
           >
             Iniciar sesión
           </ButtonLink>
-          <ButtonLink href="#precios" variant="primary">
+          <ButtonLink href="https://app.presuply.app/pricing" variant="primary">
             Probar gratis
           </ButtonLink>
         </div>
@@ -62,4 +62,3 @@ export function Header() {
     </header>
   )
 }
-

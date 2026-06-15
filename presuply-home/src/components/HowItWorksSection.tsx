@@ -67,7 +67,7 @@ export function HowItWorksSection() {
 
       <div
         ref={rootRef}
-        className="mt-10 flex h-[78vh] min-h-[520px] items-center overflow-hidden md:h-[82vh] md:min-h-[640px]"
+        className="mt-8 flex h-[84vh] min-h-[580px] items-center overflow-hidden md:mt-10 md:h-[82vh] md:min-h-[640px]"
       >
         <div ref={trackRef} className="flex h-full w-max items-stretch">
           {steps.map((s) => (
@@ -77,7 +77,7 @@ export function HowItWorksSection() {
               aria-label={`Paso ${s.n}`}
             >
               <div className="mx-auto max-w-6xl">
-                <div className="grid grid-cols-1 items-center gap-8 rounded-4xl border border-border bg-bg-light p-6 shadow-softer md:grid-cols-12 md:p-10">
+                <div className="grid grid-cols-1 items-center gap-6 rounded-4xl border border-border bg-bg-light p-5 shadow-softer md:grid-cols-12 md:gap-8 md:p-10">
                   <div className="md:col-span-5">
                     <div className="flex items-center gap-4">
                       <span className="grid h-14 w-14 place-items-center rounded-3xl bg-orange-500 text-white shadow-soft">

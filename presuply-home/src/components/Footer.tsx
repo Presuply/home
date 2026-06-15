@@ -75,15 +75,15 @@ export function Footer() {
 
       <div className="relative z-10 px-4 pb-10 pt-10 md:px-10 md:pb-12 md:pt-12">
         <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-12 md:gap-8">
-            <div className="md:col-span-5">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 md:grid-cols-12 md:gap-8">
+            <div className="text-center sm:col-span-2 md:col-span-5 md:text-left">
               <Logo variant="large" className="h-9" />
               <p className="mt-4 max-w-md text-sm leading-relaxed text-navy-950/75">
                 Presuply transforma fotos, notas, audios y mensajes en presupuestos
                 profesionales listos para enviar. Hecho con amor por gente que entiende
                 el ritmo real de la obra.
               </p>
-              <div className="mt-5 flex items-center gap-3">
+              <div className="mt-5 flex items-center justify-center gap-3 md:justify-start">
                 {[
                   { href: '#', icon: 'linkedin' as const, label: 'LinkedIn' },
                   { href: '#', icon: 'instagram' as const, label: 'Instagram' },
@@ -108,7 +108,10 @@ export function Footer() {
                 <a href="#funciones" className="block transition hover:text-navy-950">
                   Funciones
                 </a>
-                <a href="#precios" className="block transition hover:text-navy-950">
+                <a
+                  href="https://app.presuply.app/pricing"
+                  className="block transition hover:text-navy-950"
+                >
                   Precios
                 </a>
                 <a href="#demo" className="block transition hover:text-navy-950">
@@ -132,7 +135,7 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="md:col-span-3">
+            <div className="sm:col-span-2 md:col-span-3">
               <p className="text-sm font-extrabold text-navy-950">Contacto</p>
               <div className="mt-4 space-y-3 text-sm text-navy-950/75">
                 <p>hola@presuply.com</p>
@@ -142,7 +145,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="mt-10 flex flex-col gap-3 border-t border-navy-950/15 pt-6 text-xs text-navy-950/70 md:flex-row md:items-center md:justify-between">
+          <div className="mt-10 flex flex-col gap-2 border-t border-navy-950/15 pt-6 text-center text-xs text-navy-950/70 md:flex-row md:items-center md:justify-between md:text-left">
             <p>© 2026 Presuply. Todos los derechos reservados.</p>
             <p>Hecho con amor, criterio y mucho menos trabajo administrativo.</p>
           </div>

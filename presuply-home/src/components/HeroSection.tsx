@@ -106,7 +106,7 @@ export function HeroSection() {
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <ButtonLink href="#precios" variant="primary">
+            <ButtonLink href="https://app.presuply.app/pricing" variant="primary">
               Probar Presuply gratis
               <span className="text-white/80">→</span>
             </ButtonLink>
@@ -140,7 +140,7 @@ export function HeroSection() {
             <div className="relative">
               <div
                 data-hero-phone
-                className="relative mx-auto aspect-[9/18] w-[290px] rounded-[2.2rem] border border-border bg-white shadow-soft sm:w-[330px]"
+                className="relative mx-auto aspect-[9/18] w-[260px] rounded-[2.2rem] border border-border bg-white shadow-soft sm:w-[330px]"
                 style={{
                   transform:
                     'perspective(1200px) rotateX(6deg) rotateY(-6deg) rotateZ(-6deg)',
@@ -336,7 +336,7 @@ export function HeroSection() {
 
               <div
                 data-hero-card
-                className="absolute -left-1 top-4 w-[220px] rounded-3xl border border-border bg-white p-4 shadow-soft sm:-left-8 sm:top-8"
+                className="absolute left-2 top-2 w-[180px] rounded-3xl border border-border bg-white p-3 shadow-soft sm:-left-8 sm:top-8 sm:w-[220px] sm:p-4"
               >
                 <div className="flex items-center justify-between">
                   <p className="text-xs font-extrabold text-navy-900">
@@ -362,7 +362,7 @@ export function HeroSection() {
 
               <div
                 data-hero-card
-                className="absolute -right-1 top-44 w-[240px] rounded-3xl border border-border bg-white p-4 shadow-soft sm:-right-10 sm:top-52"
+                className="absolute right-2 top-40 w-[195px] rounded-3xl border border-border bg-white p-3 shadow-soft sm:-right-10 sm:top-52 sm:w-[240px] sm:p-4"
               >
                 <div className="flex items-center justify-between">
                   <p className="text-xs font-extrabold text-navy-900">

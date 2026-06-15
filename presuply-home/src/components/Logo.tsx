@@ -32,9 +32,9 @@ export function Logo({
   return (
     <div className={`flex items-center ${className}`}>
       <img
-        src="/presuply_logo_compacto.svg"
+        src="/presuply_logo_pequeño.svg"
         alt="Presuply"
-        className="h-8 w-auto sm:hidden"
+        className="h-10 w-auto sm:hidden"
         decoding="async"
       />
       <img
