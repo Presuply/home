@@ -1,3 +1,4 @@
+import { AffiliateSection } from '../components/AffiliateSection'
 import { AppShowcaseSection } from '../components/AppShowcaseSection'
 import { BenefitsSection } from '../components/BenefitsSection'
 import { DownloadAppSection } from '../components/DownloadAppSection'
@@ -8,6 +9,7 @@ import { HowItWorksSection } from '../components/HowItWorksSection'
 import { ImageSequenceHeroSection } from '../components/ImageSequenceHeroSection'
 import { PricingSection } from '../components/PricingSection'
 import { ProblemSection } from '../components/ProblemSection'
+import { ProfessionalRigorSection } from '../components/ProfessionalRigorSection'
 import { SimpleTransition } from '../components/SimpleTransition'
 import { useIsDesktop } from '../lib/useIsDesktop'
 
@@ -26,9 +28,11 @@ export function HomePage() {
         <ProblemSection />
         <SimpleTransition />
         <HowItWorksSection />
+        <ProfessionalRigorSection />
         <BenefitsSection />
         <AppShowcaseSection />
         <PricingSection />
+        <AffiliateSection />
         <DownloadAppSection />
       </main>
       <Footer />
