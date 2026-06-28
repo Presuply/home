@@ -3,12 +3,36 @@ import { gsap } from '../lib/gsap'
 import { Icon } from './ui/Icon'
 
 const benefits = [
-  { title: 'Ahorra tiempo administrativo', icon: 'clock' as const },
-  { title: 'Reduce errores en partidas', icon: 'shield' as const },
-  { title: 'Mejora tu imagen ante el cliente', icon: 'spark' as const },
-  { title: 'Centraliza todos tus presupuestos', icon: 'folder' as const },
-  { title: 'Crea PDFs profesionales', icon: 'template' as const },
-  { title: 'Trabaja desde donde quieras', icon: 'device' as const },
+  {
+    title: 'Ahorra tiempo administrativo',
+    icon: 'clock' as const,
+    desc: 'Lo que antes te llevaba una noche, lo tienes listo antes de llegar a casa. El cliente recibe el PDF esa misma tarde.',
+  },
+  {
+    title: 'Reduce errores en partidas',
+    icon: 'shield' as const,
+    desc: 'Precios de la base BCCA, no de memoria. Cada medición cuadra con su unidad y su precio, sin cálculos manuales.',
+  },
+  {
+    title: 'Mejora tu imagen ante el cliente',
+    icon: 'spark' as const,
+    desc: 'Un PDF con tu logo, tus datos y las partidas bien ordenadas. El primer presupuesto ya da una imagen profesional.',
+  },
+  {
+    title: 'Centraliza todos tus presupuestos',
+    icon: 'folder' as const,
+    desc: 'Todos tus presupuestos en un sitio, con su estado: borrador, enviado, aprobado. Sin archivos perdidos en el escritorio.',
+  },
+  {
+    title: 'Crea PDFs profesionales',
+    icon: 'template' as const,
+    desc: 'Con tu membrete, los capítulos estructurados y el total con IGIC o IVA incluido. Listo para imprimir o enviar por email.',
+  },
+  {
+    title: 'Trabaja desde donde quieras',
+    icon: 'device' as const,
+    desc: 'La app va contigo a la obra. Tomas la medición, añades la partida y el presupuesto se va actualizando en el momento.',
+  },
 ]
 
 export function BenefitsSection() {
@@ -44,8 +68,7 @@ export function BenefitsSection() {
             Pensado para reformistas, albañiles y pequeñas empresas de obra.
           </h2>
           <p className="mt-3 text-pretty text-base text-text-secondary sm:text-lg">
-            Un flujo simple, plantillas cuidadas y un PDF que transmite
-            confianza.
+            Menos horas en el escritorio. Más tiempo para la obra que tienes que cerrar.
           </p>
         </div>
 
@@ -65,8 +88,7 @@ export function BenefitsSection() {
                 </h3>
               </div>
               <p className="mt-3 text-sm leading-relaxed text-text-secondary">
-                Automatiza la parte repetitiva y dedica el tiempo a cerrar
-                obras.
+                {b.desc}
               </p>
             </div>
           ))}

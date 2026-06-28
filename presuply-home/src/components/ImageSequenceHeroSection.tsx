@@ -24,8 +24,8 @@ export function ImageSequenceHeroSection({
   pxPerFrame = 90,
   minScrollDistancePx = 3200,
   showFrameLabel = false,
-  title = 'Presupuestos profesionales en minutos.',
-  subtitle = 'Convierte fotos, notas, audios o WhatsApp en presupuestos PDF listos para enviar. Crea, revisa y comparte en segundos.',
+  title = 'El presupuesto se hace en la obra. No en casa, de noche.',
+  subtitle = 'Añade partidas con precios reales mientras mides en la obra. Presuply organiza los capítulos y genera el PDF en el momento.',
 }: Props) {
   const rootRef = useRef<HTMLDivElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
@@ -185,7 +185,7 @@ export function ImageSequenceHeroSection({
           <div className="mt-auto grid grid-cols-1 items-end gap-10 pb-10 md:grid-cols-12 md:pb-16">
             <div className="max-w-2xl md:col-span-6">
               <div className="inline-flex rounded-full border border-orange-400/30 bg-orange-500/10 px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-orange-300">
-                Automatiza tus presupuestos
+                App móvil para presupuestos de obra
               </div>
               <h1 className="mt-4 max-w-xl text-balance text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
                 {title}

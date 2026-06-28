@@ -93,16 +93,16 @@ export function HeroSection() {
             <span className="grid h-6 w-6 place-items-center rounded-full bg-orange-500/15 text-orange-500">
               <Icon name="bolt" className="h-4 w-4" />
             </span>
-            Del input al PDF, sin fricción
+            Para reformistas, albañiles y pequeñas empresas de obra
           </p>
 
           <h1 className="mt-5 text-balance text-4xl font-extrabold tracking-tight text-navy-900 sm:text-5xl">
-            Presupuestos de obra en{' '}
-            <span className="text-orange-500">minutos</span>, no en horas.
+            El presupuesto se hace{' '}
+            <span className="text-orange-500">en la obra</span>. No en casa, de noche.
           </h1>
           <p className="mt-4 max-w-xl text-pretty text-base leading-relaxed text-text-secondary sm:text-lg">
-            Sube una foto, un mensaje o una nota de obra. Presuply organiza la
-            información y genera presupuestos profesionales listos para enviar.
+            Añade cliente, capítulos y partidas desde el móvil mientras mides
+            en la obra. Presuply los organiza y el PDF sale listo para enviar.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">

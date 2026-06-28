@@ -131,6 +131,11 @@ export function PricingSection() {
           </div>
         </div>
 
+        <p className="mt-4 text-center text-xs text-text-secondary">
+          Los precios no incluyen impuestos.{' '}
+          <span className="font-semibold text-navy-900/70">Compatible con IGIC (Canarias) e IVA.</span>
+        </p>
+
         <div className="mt-10 grid grid-cols-1 gap-4 lg:grid-cols-3">
           {items.map((p) => (
             <div

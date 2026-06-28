@@ -5,31 +5,31 @@ import { Icon } from './ui/Icon'
 const problems = [
   {
     title: 'Notas en papel',
-    desc: 'Información dispersa y difícil de comparar.',
+    desc: 'Mediciones en papeles sueltos, montos en otro cuaderno. A las diez de la noche, a ver quién los encuentra.',
     icon: 'note' as const,
     visual: 'from-white to-orange-500/10',
   },
   {
     title: 'Audios de WhatsApp',
-    desc: 'Mensajes que nadie tiene tiempo de transcribir.',
+    desc: 'El cliente te manda un audio de cuatro minutos explicando los cambios. Eso no se pasa a Excel fácilmente.',
     icon: 'whatsapp' as const,
     visual: 'from-white to-navy-900/10',
   },
   {
     title: 'Precios desordenados',
-    desc: 'Tarifas en el sitio equivocado, sin control.',
+    desc: 'Cada partida en una pestaña distinta. Nunca sabes si ese precio es el de ahora o el del año pasado.',
     icon: 'price' as const,
     visual: 'from-white to-orange-500/10',
   },
   {
     title: 'PDFs hechos a mano',
-    desc: 'Documentos poco profesionales, sin plantillas.',
+    desc: 'Coges el presupuesto del cliente anterior, borras lo que sobra y rezas para que no quede algún nombre equivocado.',
     icon: 'pdf' as const,
     visual: 'from-white to-navy-900/10',
   },
   {
     title: 'Cambios a última hora',
-    desc: 'Rehacer y corregir, otra vez.',
+    desc: 'El cliente añade un baño. Rehaces el Excel, vuelves a sumar, mandas otro PDF. Otra noche perdida.',
     icon: 'changes' as const,
     visual: 'from-white to-orange-500/10',
   },
@@ -79,12 +79,11 @@ export function ProblemSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight text-navy-900 sm:text-4xl">
-            Hacer presupuestos sigue siendo{' '}
-            <span className="text-orange-500">demasiado lento</span>.
+            Hacer presupuestos{' '}
+            <span className="text-orange-500">te quita las noches</span>.
           </h2>
           <p className="mt-3 text-pretty text-base text-text-secondary sm:text-lg">
-            La información llega en mil formatos. El problema no es trabajar:
-            es ordenar y pasar todo a limpio.
+            La obra acaba. Llegas a casa. Y todavía te queda el presupuesto.
           </p>
         </div>
 

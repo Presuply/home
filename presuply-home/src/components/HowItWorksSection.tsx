@@ -5,20 +5,20 @@ import { Icon } from './ui/Icon'
 const steps = [
   {
     n: '1',
-    title: 'Sube la información',
-    desc: 'Fotos, mensajes, notas o audios: todo sirve.',
-    icon: 'upload' as const,
+    title: 'Cliente y obra',
+    desc: 'Introduce el nombre del cliente, la dirección de la obra y el tipo de trabajo. La base de cada presupuesto.',
+    icon: 'user' as const,
   },
   {
     n: '2',
-    title: 'Presuply organiza partidas',
-    desc: 'Detecta conceptos, unidades y precios automáticamente.',
+    title: 'Capítulos y partidas',
+    desc: 'Añade partidas con precios de la base BCCA o los tuyos propios. Agrupa por capítulos: demolición, fontanería, acabados.',
     icon: 'list' as const,
   },
   {
     n: '3',
-    title: 'Genera un PDF profesional',
-    desc: 'Listo para revisar, exportar y enviar al cliente.',
+    title: 'Revisión y envío',
+    desc: 'Revisa el total, ajusta lo que necesites y envía el PDF directamente. También exportas en BC3 si te lo piden.',
     icon: 'doc' as const,
   },
 ]
@@ -60,7 +60,7 @@ export function HowItWorksSection() {
             Cómo funciona
           </h2>
           <p className="mt-3 text-pretty text-base text-text-secondary sm:text-lg">
-            Scroll vertical, progreso horizontal: 3 pantallas, 1 resultado.
+            Tres pasos. En la obra, en el camión o antes de llegar a casa.
           </p>
         </div>
       </div>
@@ -102,9 +102,9 @@ export function HowItWorksSection() {
                       {s.n === '1' && (
                         <div className="grid grid-cols-3 gap-3">
                           {[
-                            { t: 'Móvil', i: 'device' as const },
-                            { t: 'Libreta', i: 'note' as const },
-                            { t: 'Cámara', i: 'spark' as const },
+                            { t: 'Cliente', i: 'user' as const },
+                            { t: 'Dirección', i: 'note' as const },
+                            { t: 'Obra', i: 'device' as const },
                           ].map((x) => (
                             <div
                               key={x.t}
@@ -129,7 +129,7 @@ export function HowItWorksSection() {
                               Partidas
                             </p>
                             <span className="rounded-full bg-orange-500/15 px-2 py-1 text-xs font-semibold text-orange-600">
-                              Detectadas
+                              Base BCCA
                             </span>
                           </div>
                           <div className="mt-4 space-y-3">
@@ -190,7 +190,7 @@ export function HowItWorksSection() {
                                 Listo para enviar
                               </p>
                               <p className="mt-1 text-sm text-text-secondary">
-                                Revisa y exporta en un clic.
+                                PDF, Excel o BC3 — tú eliges el formato.
                               </p>
                             </div>
                             <div className="rounded-2xl bg-bg-light px-3 py-2 text-xs font-semibold text-navy-900/70">

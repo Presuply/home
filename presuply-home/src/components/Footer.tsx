@@ -79,8 +79,8 @@ export function Footer() {
             <div className="text-center sm:col-span-2 md:col-span-5 md:text-left">
               <Logo variant="large" className="h-9" />
               <p className="mt-4 max-w-md text-sm leading-relaxed text-navy-950/75">
-                Presuply transforma fotos, notas, audios y mensajes en presupuestos
-                profesionales listos para enviar. Hecho con amor por gente que entiende
+                Presuply organiza tus mediciones, capítulos y partidas en un presupuesto
+                profesional listo para enviar. Hecho con criterio por gente que entiende
                 el ritmo real de la obra.
               </p>
               <div className="mt-5 flex items-center justify-center gap-3 md:justify-start">
@@ -146,7 +146,7 @@ export function Footer() {
           </div>
 
           <div className="mt-10 flex flex-col gap-2 border-t border-navy-950/15 pt-6 text-center text-xs text-navy-950/70 md:flex-row md:items-center md:justify-between md:text-left">
-            <p>© 2026 Presuply. Todos los derechos reservados.</p>
+            <p>© 2026 Presuply · Piperon Labs S.L. (en constitución). Todos los derechos reservados.</p>
             <p>Hecho con amor, criterio y mucho menos trabajo administrativo.</p>
           </div>
         </div>

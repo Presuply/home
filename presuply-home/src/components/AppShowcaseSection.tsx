@@ -4,9 +4,9 @@ import { ButtonLink } from './ui/ButtonLink'
 import { Icon } from './ui/Icon'
 
 const bullets = [
-  'Intuitiva y fácil de usar',
-  'Diseñada para el día a día en obra',
-  'Todo lo que necesitas, en tu bolsillo',
+  'Presupuesta en la obra, sin volver a casa',
+  'Precios BCCA y los tuyos, siempre a mano',
+  'PDF, Excel o BC3 desde el móvil',
 ]
 
 const screens = [
@@ -124,7 +124,7 @@ export function AppShowcaseSection() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-10 px-4 md:grid-cols-12 md:gap-8 md:px-6">
         <div className="md:col-span-5">
           <h2 className="text-balance text-3xl font-extrabold tracking-tight text-navy-900 sm:text-4xl">
-            Una app simple para trabajar rápido.
+            Hecha para la obra, no para la oficina.
           </h2>
           <ul className="mt-6 space-y-3">
             {bullets.map((b) => (
