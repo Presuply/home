@@ -115,19 +115,6 @@ export function HeroSection() {
             </ButtonLink>
           </div>
 
-          <div className="mt-8 flex items-center gap-3 text-sm text-text-secondary">
-            <div className="flex -space-x-2">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="h-9 w-9 rounded-full border border-border bg-gradient-to-br from-white to-bg-light shadow-softer"
-                />
-              ))}
-            </div>
-            <span className="text-sm">
-              +500 profesionales ya ahorran tiempo cada día
-            </span>
-          </div>
         </div>
 
         <div className="relative z-10 md:col-span-6">

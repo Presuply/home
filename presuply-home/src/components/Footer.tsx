@@ -140,7 +140,7 @@ export function Footer() {
               <div className="mt-4 space-y-3 text-sm text-navy-950/75">
                 <p>hola@presuply.com</p>
                 <p>Soporte por email de lunes a viernes</p>
-                <p>Madrid, España</p>
+                <p>Tenerife, Islas Canarias</p>
               </div>
             </div>
           </div>
