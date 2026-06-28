@@ -5,16 +5,24 @@ import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { HeroSection } from '../components/HeroSection'
 import { HowItWorksSection } from '../components/HowItWorksSection'
+import { ImageSequenceHeroSection } from '../components/ImageSequenceHeroSection'
 import { PricingSection } from '../components/PricingSection'
 import { ProblemSection } from '../components/ProblemSection'
 import { SimpleTransition } from '../components/SimpleTransition'
+import { useIsDesktop } from '../lib/useIsDesktop'
 
 export function HomePage() {
+  const isDesktop = useIsDesktop()
+
   return (
     <div className="min-h-screen bg-bg-light">
       <Header />
       <main>
-        <HeroSection />
+        {isDesktop ? (
+          <ImageSequenceHeroSection />
+        ) : (
+          <HeroSection />
+        )}
         <ProblemSection />
         <SimpleTransition />
         <HowItWorksSection />

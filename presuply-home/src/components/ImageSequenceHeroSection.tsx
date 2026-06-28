@@ -38,7 +38,7 @@ export function ImageSequenceHeroSection({
   const urls = useMemo(() => {
     return Array.from({ length: frameCount }, (_, i) => {
       const index = i + 1
-      return `${basePath}/frame_${pad3(index)}.png`
+      return `${basePath}/frame_${pad3(index)}.webp`
     })
   }, [basePath, frameCount])
 

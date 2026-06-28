@@ -4,7 +4,7 @@ import { ButtonLink } from './ui/ButtonLink'
 
 const nav = [
   { label: 'Funciones', href: '#funciones' },
-  { label: 'Precios', href: 'https://app.presuply.app/pricing' },
+  { label: 'Precios', href: '#precios' },
   { label: 'Blog', href: '#blog' },
   { label: 'Contacto', href: '#contacto' },
 ]
@@ -20,8 +20,7 @@ export function Header() {
   }, [])
 
   const className = useMemo(() => {
-    const base =
-      'sticky top-0 z-50 border-b transition backdrop-blur-md'
+    const base = 'sticky top-0 z-50 border-b transition backdrop-blur-md'
     const idle = 'bg-white/70 border-transparent'
     const active = 'bg-white/80 border-border shadow-[0_10px_30px_rgba(7,24,39,0.10)]'
     return `${base} ${scrolled ? active : idle}`
@@ -54,8 +53,9 @@ export function Header() {
           >
             Iniciar sesión
           </ButtonLink>
-          <ButtonLink href="https://app.presuply.app/pricing" variant="primary">
-            Probar gratis
+          {/* TODO: actualizar href cuando estén disponibles los enlaces de App Store / Google Play */}
+          <ButtonLink href="#descarga" variant="primary">
+            Descargar app
           </ButtonLink>
         </div>
       </div>
